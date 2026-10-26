@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Гаспар Агро</title>
+<meta name="description" content="Гаспар Агро — сельхозтехника собственного производства. Мы в MAX, Telegram и ВКонтакте.">
+<meta name="theme-color" content="#121212">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=JetBrains+Mono:wght@500&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  /* Brand palette of the Gaspar Agro reels. The page is dark by design in both themes. */
+  :root {
+    --bg: #121212; --card: #1C1D1E; --edge: #2A2C2E; --text: #F2F2F0; --muted: #8E8E8C;
+    --lime: #B6EF33; --ink: #121212; --paper: #E8E8E6;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #121212; --card: #1C1D1E; } }
+  :root[data-theme="dark"] { --bg: #121212; --card: #1C1D1E; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    min-height: 100svh; font-family: Manrope, system-ui, sans-serif;
+    background: radial-gradient(ellipse 90% 50% at 50% 0%, rgba(182,239,51,0.10), transparent 70%), var(--bg);
+    display: flex; justify-content: center; padding: 40px 16px calc(40px + env(safe-area-inset-bottom));
+  }
+  main { width: 100%; max-width: 460px; display: flex; flex-direction: column; gap: 14px; }
+  .tag { font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
+  .tag::before { content: ""; display: inline-block; width: 8px; height: 8px; background: var(--lime); margin-right: 10px; vertical-align: 0; border-radius: 2px; }
+  h1 { font-family: Unbounded, sans-serif; font-weight: 900; font-size: clamp(36px, 11vw, 50px); line-height: 1; letter-spacing: -.01em; margin-top: 18px; }
+  .hl { display: inline-block; background: var(--lime); color: var(--ink); padding: .08em .22em .12em; margin: 10px 0 0 -4px; transform: rotate(-1.4deg);
+        font-family: Unbounded, sans-serif; font-weight: 900; font-size: clamp(20px, 6vw, 26px); line-height: 1; }
+  .lead { color: var(--muted); font-size: 15px; line-height: 1.5; margin: 6px 0 14px; }
+  a.link {
+    display: flex; align-items: center; gap: 16px; padding: 16px; border-radius: 24px; text-decoration: none; color: inherit;
+    background: var(--card); border: 2px solid var(--edge); transition: border-color .15s, transform .15s;
+    animation: drop .5s cubic-bezier(.16,1,.3,1) both;
+  }
+  a.link:nth-of-type(2) { animation-delay: .08s } a.link:nth-of-type(3) { animation-delay: .16s } a.link:nth-of-type(4) { animation-delay: .24s }
+  a.link:hover, a.link:focus-visible { border-color: var(--lime); outline: none; }
+  a.link:active { transform: scale(.98); }
+  .ico { flex: 0 0 60px; height: 60px; border-radius: 18px; display: grid; place-items: center; color: #fff;
+         font-family: Unbounded, sans-serif; font-weight: 900; font-size: 19px; }
+  .max { background: linear-gradient(140deg, #3E7BFF, #9B3DFF); font-size: 16px; }
+  .tg { background: linear-gradient(160deg, #37BBFE, #1E96D8); border-radius: 50%; }
+  .vk { background: #0077FF; }
+  .site { background: var(--lime); color: var(--ink); }
+  .txt { flex: 1; min-width: 0; }
+  .name { font-family: Unbounded, sans-serif; font-weight: 900; font-size: 20px; line-height: 1.1; }
+  .sub { font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; margin-top: 6px; }
+  .go { flex: 0 0 40px; height: 40px; border-radius: 50%; background: var(--lime); display: grid; place-items: center; }
+  footer { margin-top: 18px; text-align: center; }
+  @keyframes drop { from { opacity: 0; transform: translateY(-18px) rotateX(40deg); } }
+  @media (prefers-reduced-motion: reduce) { a.link { animation: none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="tag">Гаспар Агро / наши площадки</div>
+  <h1>ГАСПАР<br>АГРО</h1>
+  <div><span class="hl">МЫ ЕСТЬ ВЕЗДЕ</span></div>
+  <p class="lead">Техника собственного производства для подготовки гряд. Новости, видео с полей и ответы на вопросы — выбирайте, где вам удобнее.</p>
+
+  <a class="link" href="https://max.ru/channel_GASPAR_AGRO" target="_blank" rel="noopener">
+    <span class="ico max">MAX</span>
+    <span class="txt"><span class="name">MAX</span><span class="sub" style="display:block">Мессенджер · канал</span></span>
+    <span class="go"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#121212" d="M4 4 21 12 4 20 6.5 12Z"/></svg></span>
+  </a>
+  <a class="link" href="https://t.me/gasparagro61" target="_blank" rel="noopener">
+    <span class="ico tg"><svg width="32" height="32" viewBox="0 0 24 24"><path fill="#fff" d="M2.5 11.3 20.6 4.3c.8-.3 1.6.2 1.3 1.5l-3.1 14.5c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.9 14.3 2.4 12.9c-1-.3-1-1 .1-1.6z"/></svg></span>
+    <span class="txt"><span class="name">Telegram</span><span class="sub" style="display:block">Канал · новости и техника</span></span>
+    <span class="go"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#121212" d="M4 4 21 12 4 20 6.5 12Z"/></svg></span>
+  </a>
+  <a class="link" href="https://vk.ru/gasparagrogroup" target="_blank" rel="noopener">
+    <span class="ico vk">VK</span>
+    <span class="txt"><span class="name">ВКонтакте</span><span class="sub" style="display:block">Сообщество · видео</span></span>
+    <span class="go"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#121212" d="M4 4 21 12 4 20 6.5 12Z"/></svg></span>
+  </a>
+  <a class="link" href="https://gaspar-agro.ru" target="_blank" rel="noopener">
+    <span class="ico site">GA</span>
+    <span class="txt"><span class="name">Сайт</span><span class="sub" style="display:block">Каталог и цены</span></span>
+    <span class="go"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#121212" d="M4 4 21 12 4 20 6.5 12Z"/></svg></span>
+  </a>
+
+  <footer class="tag">© Гаспар Агро</footer>
+</main>
+</body>
+</html>
